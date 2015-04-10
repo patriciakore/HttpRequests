@@ -1,25 +1,34 @@
 require_relative 'contact'
 require_relative 'rolodex'
+require 'faker'
 require 'sinatra'
 
 $rolodex=Rolodex.new
 
+20.times do 
+	contact = Contact.new(Faker::Name.first_name,
+			Faker::Name::last_name,
+			Faker::Internet.email,
+			"Good Stuff")
+	$rolodex.add_contact(contact)
+end
+
+
+
 get '/' do
   @crm_app_name = "My CRM"
-  erb :index
+  erb(:index)
 end
 
 
 get '/contacts' do
-	#contact=Contact.new("a","b","c","d")
-	#$rolodex.add_contact(contact)
-	@contacts=$rolodex.contacts
+	@contacts = $rolodex.contacts
 
-  erb :contacts
+  erb(:contacts)
 end
 
 get '/contacts/new' do
-  erb :new_contact
+  erb(:new_contact)
 end
 
 post '/contacts' do

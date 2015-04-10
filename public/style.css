@@ -1,0 +1,19 @@
+body {
+    background-image: url('http://i.imgur.com/ERShXxT.jpg');
+    background-color: #cccccc;
+    background-size: 100% auto; /* width and height, can be %, px or whatever. */
+
+}
+
+#content {
+	background-color: rgba(69, 202, 226, 0.26);
+	display: table;
+	padding: 2em 2em 2em 2em;
+}
+
+nav {
+    color: black;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: bold;
+}
