@@ -5,11 +5,25 @@
  <link rel="stylesheet" type="text/css" href="/style.css">
 
 </head>
-<nav> <li ><a style="color:rgb(51, 51, 255); font-weight: bold" href="/">Home</a></li></nav>
 <body>
+
+	<nav>
+		<ul>
+			<li>
+				<a style="color:black; font-weight: bold" href="/">Home</a>
+			</li>
+			<li>
+				<a style="color:black; font-weight: bold;" href="/contacts">View all contacts</a>
+			</li>
+			<li>
+				<a style="color:black; font-weight: bold;" href = "/contacts/new">Add a contact</a>
+			</li>
+		</ul>
+	</nav>
+
 	<div id="content">
-		
 		<%= yield %>
 	</div>
+
 </body>
 </html>

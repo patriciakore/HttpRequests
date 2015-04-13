@@ -1,0 +1,27 @@
+
+<fieldset>
+  <div class="field">
+  <label for="first-name">First Name:</label>
+  <input id="first-name" type="text" name="first_name" value="<%= @contact.first_name %>">
+  </div>
+  
+
+    <div class="field">
+    <label for="last-name">Last Name:</label>
+     <input id="last-name" type="text" name="last_name" value="<%= @contact.last_name %>">
+    </div>
+
+ <div class="field">
+  <label for="my-email">Email:</label>
+  <input id="email" type="text" name="email" value="<%= @contact.email %>">
+  </div>
+
+
+ <div class="field">
+ <label for="my-note">Note: </label>
+  <input type="text" name="note" value="<%= @contact.note %>">
+  </div>
+
+  </fieldset>
+
+  <input type="submit" style="float: right;" value="Update">

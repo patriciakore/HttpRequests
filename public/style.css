@@ -5,6 +5,16 @@ body {
 
 }
 
+.edit-contact label {
+	width: 5em;
+	  text-align: right;
+	  display: inline-block;	
+}
+
+.field {
+
+	padding: 5px 0 5px 0;
+}
 #content {
 	background-color: rgba(69, 202, 226, 0.26);
 	display: table;
